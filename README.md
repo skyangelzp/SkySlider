@@ -1,2 +1,2 @@
 # SkySlider
-Image slider &amp; carousel
+Simple, lightweight, responsive image slider and carousel with API and callbacks
