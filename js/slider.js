@@ -32,7 +32,7 @@
             carousel: false,
             duration: 500,
             items: 1,
-            loop: false,
+            loop: true,
             autoplay: false,
             callback: function() {}
         },
@@ -146,12 +146,7 @@
 }(jQuery));
 
 $(document).ready(function() {
-    var $slider = $('#slider').skySlider({
-        items: 1,
-        carousel: true,
-        loop: true,
-        autoplay: true
-    });
+    var $slider = $('#slider').skySlider();
     var $carousel = $('#carousel').skySlider({        
         interval: 3000,
         items: 2,
@@ -159,10 +154,9 @@ $(document).ready(function() {
         loop: true,
         autoplay: true,
         callback: function(number) {
-            console.log('Current slideSet - ' + number);
+            //console.log('Current slideSet - ' + number);
         }
     });
 
     // console.log('Total number of slides - ' + $slider.getSlideSetsCount());
-    // console.log('Total number of slides - ' + $carousel.getSlideSetsCount());
 });
